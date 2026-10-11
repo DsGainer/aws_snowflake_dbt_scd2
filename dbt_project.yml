@@ -4,6 +4,19 @@ config-version: 2
 
 profile: 'default'   # must match the profile name in profiles.yml (see note 1)
 
+vars:
+
+   wrk_schema: BRONZE
+
+   file_format_json: MYDB.BRONZE.MY_CSV_FORMAT
+
+   purge_status: FALSE
+
+   stage_name: MYDB.BRONZE.MY_S3_STAGE
+
+   rawhist_db: MYDB
+
+   
 model-paths: ["models"]
 analysis-paths: ["analyses"]
 test-paths: ["tests"]
@@ -28,3 +41,4 @@ models:
     gold:
       +schema: gold
       +materialized: view
+
