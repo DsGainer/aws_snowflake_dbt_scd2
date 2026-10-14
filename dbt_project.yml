@@ -31,14 +31,7 @@ clean-targets:
 
 models:
   dbt_scdtype2_workshop:
-    example:
-      +schema: example
-
     silver:
       +schema: silver
       +materialized: table
-
-    gold:
-      +schema: gold
-      +materialized: view
 
