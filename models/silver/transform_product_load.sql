@@ -9,7 +9,6 @@
  "schema": 'SILVER'
 
 })}}
-
  
 
 WITH transform AS(
@@ -57,8 +56,6 @@ SELECT
 FROM {{source('source','WORK_PRODUCT_COPY')}}
 
 )
-
- 
 
 SELECT *
 
