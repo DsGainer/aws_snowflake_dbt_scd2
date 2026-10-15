@@ -6,7 +6,7 @@
 
       target_database='PC_DBT_DB',
 
-      target_schema='silver',
+      target_schema='snapshots',
 
       unique_key='PRODUCT_ID',
 
